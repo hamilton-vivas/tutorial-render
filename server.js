@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/api/items", async (req, res) => {
-    //res.send("Listando os items do banco de dados");
+    res.send("Listando os items do banco de dados");
 
     try {
         const { rows: allItems } = await itemsPool.query("select * from items");
