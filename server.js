@@ -15,8 +15,8 @@ app.get("/api/items", async (req, res) => {
 
     try {
         const { rows: allItems } = await itemsPool.query("select * from items");
-        //console.log(rows);
-        //res.json(rows);
+        console.log(rows);
+        res.json(rows);
         res.json({
             allItems
         });
