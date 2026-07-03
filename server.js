@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-    res.send("Alô Mundo !!");
+   // res.send("Alô Mundo !!");
 });
 
 app.get("/api/items", async (req, res) => {
